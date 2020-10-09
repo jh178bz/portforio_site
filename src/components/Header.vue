@@ -2,7 +2,7 @@
   <div class="header">
     <div class="header-inner">
       <h1 class="title">Jou's Portforio</h1>
-      <div class="nav-res">
+      <nav class="nav-res">
         <a href="#" class="link-content" @click="clickSmoothScroll('#app')">
           <p class="comment">Top</p>
         </a>
@@ -18,7 +18,20 @@
         <a href="#" class="link-content" @click="clickSmoothScroll('#contact')">
           <p class="comment">Contact</p>
         </a>
-      </div>
+      </nav>
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    methods:{
+      clickSmoothScroll(x) {
+        event.preventDefault()
+        this.$SmoothScroll(
+          document.querySelector(x),800,null,null,'y'
+        )
+      }
+    }
+  }
+</script>

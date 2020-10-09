@@ -1,3 +1,12 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: 'Bangers', cursive;
   text-align: center;
@@ -5,12 +14,21 @@
 
 #top {
   position: relative;
-  background-image: url(portforio-top.jpeg);
+  background-image: url(./image/portforio-top.jpeg);
   background-size: cover;
   height: 100vh;
 }
+
+#main{
+  font-size: 75px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -20,12 +38,26 @@
   margin-right: 5%;
   display: flex;
 }
+
+nav {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+.comment {
+  margin: 10px 10px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
 .title{
   padding:20px 0px;
   margin:unset;
 }
-.nav{
-  margin: auto ;
-  margin-right: 0;
-  padding: auto;
+
+.Profile p {
+  display: inline-block;
+  text-align: left;
 }

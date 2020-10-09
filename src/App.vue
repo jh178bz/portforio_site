@@ -30,14 +30,6 @@ export default {
   name: 'App',
   components: {
     Header,Footer,Profile,Skill,Work,Contact
-  },
-  methods:{
-    clickSmoothScroll (x) {
-      event.preventDefault()
-      this.$SmoothScroll(
-        document.querySelector(x),800,null,null,'y'
-      )
-    }
   }
 }
 </script>
