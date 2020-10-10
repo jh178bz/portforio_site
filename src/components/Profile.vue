@@ -3,20 +3,39 @@
     <h1 class="content-title">Profile</h1>
     <div class="Profile">
       <div class="profile-content">
-        <img src="../css/image/profile.jpg" width="300" height="300" alt="">
+        <carousel :per-page="1" autoplay="true" loop="true" autoplayTimeout="4000" :speed="1000">
+          <slide>
+            <img src="../css/image/profile.jpg" width="300" height="300" alt="">
+          </slide>
+          <slide>
+            <img src="../css/image/profile2.jpg" width="400" height="300" alt="">
+          </slide>
+          <slide>
+            <img src="../css/image/profile3.jpg" width="250" height="300" alt="">
+          </slide>
+        </carousel>
         <h2>服部  丈</h2>
         <p class="txt">
           生年月日：１９９８年７月２日大阪生まれ<br>
-          趣味：バイク(レース・サーキット走行)・登山・キャンプ(アウトドア全般)<br>
+          趣味：バイク(レース・サーキット走行)・登山・キャンプ(アウトドア全般)、英語学習<br>
+          出身校：大阪市立都島工業高校 機械電気科<br>
           <br>
-          幼少期から家族の影響で野球を始める。当時からロボットなどの機械や・電気、宇宙や天体観測に興味を持ちものづくりに携わるエンジニアを志す。<br>
-          野球と工学系への進路を両立させる為、大阪市立都島工業高校へ進学。野球部では部員５０人を超えるチームで副主将を務めチームを大阪ベスト１６に至るまでに貢献。<br>
-          卒業後は幼少期からの夢であった航空宇宙分野で働く為、住友精密工業株式会社に入社。<br>
-          開発業務を担う航空宇宙技術部に配属され、航空機の着陸装置の開発試験を行う過程で、工数削減の改善活動を評価され役員へのスピーチを経験。<br>
-          若干２２歳にして疲労試験や落下試験、耐久試験といった数々の開発試験を担当し、成功に導いた。<br>
+          幼少期からロボットなどの機械や・電気、宇宙や天体観測に興味を持ちものづくりに関わるエンジニアを志す。<br>
+          卒業後は幼少期からの夢であった航空宇宙分野で貢献する為、住友精密工業株式会社に入社。<br>
           現在はプログラミングの魅力に惹かれ、多くの人々を豊かにするサービスやしくみを創造していきたいと考えエンジニアになることを目標に活動中。
         </p>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+  import { Carousel, Slide } from 'vue-carousel';
+
+  export default {
+    components: {
+    Carousel,
+    Slide
+    }
+  }
+</script>

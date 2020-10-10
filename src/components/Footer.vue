@@ -1,3 +1,3 @@
 <template>
-  <p>footer</p>
+  <p>Jou All Rights Reserved.</p>
 </template>
