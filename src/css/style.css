@@ -21,7 +21,6 @@ body {
 }
 
 #main{
-  font-size: 75px;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -29,7 +28,12 @@ body {
 }
 
 .vue-typer .custom.char.typed {
+  height: 10vh;
   color: whitesmoke;
+}
+
+.top-text {
+  font-size: 60px;
 }
 
 .header {
@@ -57,7 +61,7 @@ nav {
   font-size: 30px;
 }
 
-a {
+.nav-res a {
   text-decoration: none;
   color: #fff;
 }
@@ -72,6 +76,10 @@ a {
 .Profile p {
   display: inline-block;
   text-align: left;
+}
+
+.text-content {
+  padding: 20px;
 }
 
 .Skill {
@@ -101,6 +109,9 @@ a {
 .card{
   width: 288px;
   height: auto;
+  display: inline-block;
+  margin: 0 20px;
+  color: black;
 }
 
 .card-imgframe{
@@ -108,6 +119,12 @@ a {
   height: auto;
   padding-top: 56.25%;
   background: url(./image/srshare.png) no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.work2 {
+  background: url(./image/portforio2.png) no-repeat center;
   background-size: cover;
   box-sizing: border-box;
 }
@@ -139,4 +156,46 @@ a {
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,.2);
+}
+
+.link-icon {
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .top-text {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-text {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  #top {
+    position: relative;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-top: 66.6666666667%;
+  }
+  #main {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .top-text{
+    font-size: 30px;
+  }
 }
