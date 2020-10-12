@@ -30,6 +30,9 @@ export default {
   name: 'App',
   components: {
     Header,Footer,Profile,Skill,Work,Contact
+  },
+  mounted() {
+    this.$ga.page('/');
   }
 }
 </script>

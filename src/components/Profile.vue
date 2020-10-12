@@ -3,15 +3,21 @@
     <h1 class="content-title">Profile</h1>
     <div class="Profile">
       <div class="profile-content">
-        <carousel :per-page="1" :autoplay="true" :loop="true" :autoplayTimeout="4000" :speed="1000">
+        <carousel :per-page="1" :autoplay="true" :loop="true" :autoplayTimeout="4000" :speed="1000" :centerMode="true">
           <slide>
-            <img src="../css/image/profile.jpg" width="300" height="300" alt="">
+            <div class="carousel-image">
+              <img src="../css/image/profile.jpg" alt="">
+            </div>
           </slide>
           <slide>
-            <img src="../css/image/profile2.jpg" width="400" height="300" alt="">
+            <div class="carousel-image">
+              <img src="../css/image/profile2.jpg" alt="">
+            </div>
           </slide>
           <slide>
-            <img src="../css/image/profile4.jpg" width="400" height="300" alt="">
+            <div class="carousel-image">
+              <img src="../css/image/profile4.jpg" alt="">
+            </div>
           </slide>
         </carousel>
         <h2>服部  丈(はっとり じょう)</h2>

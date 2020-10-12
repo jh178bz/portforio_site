@@ -162,6 +162,12 @@ nav {
   margin: 0 20px;
 }
 
+.carousel-image img {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 1200px) {
   .top-text {
     font-size: 50px;
@@ -196,6 +202,16 @@ nav {
   }
 
   .top-text{
-    font-size: 30px;
+    font-size: 12px;
+  }
+
+  .card-skin {
+    margin-bottom: 20px;
+  }
+
+  .carousel-image img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
   }
 }
