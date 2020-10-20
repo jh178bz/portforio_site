@@ -4,7 +4,7 @@
     <div id="top">
       <div id="main">
         <vue-typer :text="['Welcome to the Jou\'s Portforio']" class="top-text"
-        :repeat="0" :pre-type-delay="1000" :typeDelay="120" :preEraseDelay="5000" :eraseDelay="2000">
+        :repeat="0" :pre-type-delay="1500" :typeDelay="120" :preEraseDelay="5000" :eraseDelay="2000">
         </vue-typer>
       </div>
     </div>
