@@ -10,9 +10,6 @@
         <a href="mailto:j.h178bz@gmail.com" class="link-icon">
           <font-awesome-icon icon="envelope" size="4x" style="color:red"/>
         </a>
-        <a href="https://github.com/jh178bz" class="link-icon">
-          <font-awesome-icon :icon="['fab','github']" size="4x" style="color:black"/>
-        </a>
       </div>
       </div>
     </div>

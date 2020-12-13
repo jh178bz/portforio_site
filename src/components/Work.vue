@@ -3,7 +3,7 @@
     <h1 class="content-title">Work</h1>
     <div class="Work">
       <div class="work-content">
-        <a href="https://sr-share.work">
+        <a href="https://sr-share.com">
           <div class="card card-skin">
             <div class="card-imgframe"></div>
             <div class="card-textbox">
